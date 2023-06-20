@@ -46,7 +46,7 @@ Cypress.Commands.add('api_createIssue', issue => {
     })
 })
 
-Cypress.Commands.add('api_createmilestone', (projectId, milestone) => {
+Cypress.Commands.add('api_createLabel', (projectId, label) => {
   cy.request({
     method: 'POST',
     url: `/api/v4/projects/${projectId}/labels`,
